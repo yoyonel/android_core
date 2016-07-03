@@ -30,6 +30,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import org.ros.exception.RosRuntimeException;
 
+//import android.hardware.camera2.CameraDevice;
+
 import java.io.IOException;
 import java.util.List;
 
@@ -48,6 +50,8 @@ public class CameraPreviewView extends ViewGroup {
   private byte[] previewBuffer;
   private RawImageListener rawImageListener;
   private BufferingPreviewCallback bufferingPreviewCallback;
+
+//    private CameraDevice mCameraDevice;
 
   private final class BufferingPreviewCallback implements PreviewCallback {
     @Override
